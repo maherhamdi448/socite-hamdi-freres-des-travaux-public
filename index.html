@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Société Hamdi Frères des Travaux Publics</title>
+<!-- ربط التنسيقات الخارجية CSS -->
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- شريط التنقل العلوي -->
+<header class="navbar">
+<div class="logo">
+<h2>Société Hamdi Frères <span>SHF</span></h2>
+</div>
+<nav>
+<ul>
+<li><a href="#about" data-i18n="nav_about">من نحن</a></li>
+<li><a href="#services" data-i18n="nav_services">خدماتنا</a></li>
+<li><a href="#projects" data-i18n="nav_projects">مشاريعنا</a></li>
+<li><a href="#contact" data-i18n="nav_contact">اتصل بنا</a></li>
+</ul>
+</nav>
+<div class="nav-actions">
+<button class="lang-btn" onclick="toggleLanguage()">FR / AR</button>
+<a href="#contact" class="btn-primary" data-i18n="btn_devis">طلب عرض سعر</a>
+</div>
+</header>
+
+<!-- القسم الرئيسي (Hero Section) -->
+<section class="hero">
+<div class="hero-content">
+<h1 data-i18n="hero_title">الاحترافية والدقة في بناء المستقبل والأشغال العامة</h1>
+<p data-i18n="hero_desc">شركة حمدي للأخوة للأشغال العامة - خبرة متكاملة في التشييد، البنية التحتية، الصيانة، والحلول الفنية للمؤسسات والأفراد.</p>
+<div class="hero-btns">
+<a href="#contact" class="btn-primary" data-i18n="btn_contact_now">تواصل معنا الآن</a>
+<a href="#projects" class="btn-secondary" data-i18n="btn_view_work">معاينة الأعمال</a>
+</div>
+</div>
+</section>
+
+<!-- قسم الإحصائيات -->
+<section class="stats">
+<div class="stat-item">
+<h3>15+</h3>
+<p data-i18n="stat_exp">سنوات خبرة</p>
+</div>
+<div class="stat-item">
+<h3>120+</h3>
+<p data-i18n="stat_proj">مشروع منجز</p>
+</div>
+<div class="stat-item">
+<h3>100%</h3>
+<p data-i18n="stat_qual">التزام بالمواصفات</p>
+</div>
+</section>
+
+<!-- قسم التواصل (Form) -->
+<section id="contact" class="contact-section">
+<h2 data-i18n="contact_title">تواصل معنا</h2>
+<form onsubmit="handleFormSubmit(event)" class="contact-form">
+<input type="text" placeholder="الاسم الكامل" required>
+<input type="email" placeholder="البريد الإلكتروني" required>
+<textarea placeholder="رسالتك أو تفاصيل الطلب..." rows="4" required></textarea>
+<button type="submit" class="btn-primary" data-i18n="btn_send">إرسال الطلب</button>
+</form>
+</section>
+
+<!-- ربط ملف الـ JavaScript في نهاية الملف قبل إغلاق الـ body -->
+<script src="script.js"></script>
+</body>
+</html>
+
